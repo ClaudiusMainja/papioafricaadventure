@@ -1,0 +1,648 @@
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papio Africa Adventure - Premium Adventure Tourism in Zimbabwe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/navbar.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/src/contact.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    },
+                       colors: {
+                        'stone-800text-stone-800': '#1c1917',
+                        'stone-900': '#3f3f3f',
+                        'amber-600': '#d97706',
+                        'amber-700': '#b45309',
+                        'amber-800': '#92400e',
+                        'amber-900': '#78350f',
+                        'amber-100': '#fef3c7',
+                        'amber-50': '#fffbeb',
+
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-delayed': 'float 6s ease-in-out infinite 2s',
+                        'slide-in-left': 'slideInLeft 1s ease-out forwards',
+                        'slide-in-right': 'slideInRight 1s ease-out forwards',
+                        'fade-in-up': 'fadeInUp 1s ease-out forwards',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'bounce-slow': 'bounce 2s infinite',
+                        'spin-slow': 'spin 3s linear infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        slideInLeft: {
+                            'from': { transform: 'translateX(-100px)', opacity: '0' },
+                            'to': { transform: 'translateX(0)', opacity: '1' },
+                        },
+                        slideInRight: {
+                            'from': { transform: 'translateX(100px)', opacity: '0' },
+                            'to': { transform: 'translateX(0)', opacity: '1' },
+                        },
+                        fadeInUp: {
+                            'from': { transform: 'translateY(50px)', opacity: '0' },
+                            'to': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<!-- header -->
+<header class="font-[montserrat]">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-500  bg-[#0c0a09]/90 font-medium">
+        <div class="max-w-[85%] mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex justify-between items-center h-16 lg:h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <div class="cursor-pointer">
+                        <a href="/index.html" class="flex items-center">
+                            <div class="h-12 w-auto flex items-center logo-glow">
+                                <img src="/Logo Design-03.png" alt="Papio Africa Adventures" class="h-30 w-auto">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+                    <a href="#"
+                        class="nav-link text-white hover:text-amber-600 transition-all duration-300 font-medium">Home</a>
+
+                    <!-- Destination Experiences Dropdown -->
+                    <div class="dropdown relative ">
+                        <button
+                            class="nav-link text-white hover:text-amber-600 transition-all duration-300 font-medium flex items-center py-2">
+                            Destination Experiences
+                            <svg class="w-4 h-4 ml-1 transition-transform duration-300 -hover:rotate-180"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div
+                            class="dropdown-menu absolute top-full left-0 mt-2 w-56 rounded-2xl py-3 border border-gray-100">
+                            <a href="/pages/destination-experiences/Victoria-Falls.html"
+                                class="block px-6 py-3 text-[#0c0a09] hover:bg-orange-50 hover:text-[#a05d2a] transition-all duration-300 rounded-lg mx-2">Victoria
+                                Falls</a>
+                            <a href="/pages/destination-experiences/Hwange.html"
+                                class="block px-6 py-3 text-[#0c0a09] hover:bg-orange-50 hover:text-[#a05d2a] transition-all duration-300 rounded-lg mx-2">Hwange</a>
+                            <a href="/pages/destination-experiences/Masvingo.html"
+                                class="block px-6 py-3 text-[#0c0a09] hover:bg-orange-50 hover:text-[#a05d2a] transition-all duration-300 rounded-lg mx-2">Masvingo</a>
+                            <a href="/pages/destination-experiences/Kariba.html"
+                                class="block px-6 py-3 text-[#0c0a09] hover:bg-orange-50 hover:text-[#a05d2a] transition-all duration-300 rounded-lg mx-2">Kariba</a>
+                            <a href="/pages/destination-experiences/Nyanga.html"
+                                class="block px-6 py-3 text-[#0c0a09] hover:bg-orange-50 hover:text-[#a05d2a] transition-all duration-300 rounded-lg mx-2">Nyanga</a>
+                            <a href="/pages/destination-experiences/Gweru.html"
+                                class="block px-6 py-3 text-[#0c0a09] hover:bg-orange-50 hover:text-[#a05d2a] transition-all duration-300 rounded-lg mx-2">Gweru</a>
+                            <a href="/pages/destination-experiences/Harare.html "
+                                class="block px-6 py-3 text-[#0c0a09] hover:bg-orange-50 hover:text-[#a05d2a] transition-all duration-300 rounded-lg mx-2">Harare</a>
+                        </div>
+                    </div>
+
+                    <!-- Adventure Activities Dropdown -->
+                    <div class="dropdown relative ">
+                        <button
+                            class="nav-link text-white hover:text-amber-600 transition-all duration-300 font-medium flex items-center py-2">
+                            Adventure Activities
+                            <svg class="w-4 h-4 ml-1 transition-transform duration-300 -hover:rotate-180"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div
+                            class="dropdown-menu absolute top-full left-0 mt-2 w-64 rounded-2xl py-3 border border-gray-100">
+                            <a href="/pages/adventure-activites/quadbiking.html"
+                                class="block px-6 py-3 text-[#0c0a09] hover:bg-orange-50 hover:text-[#a05d2a] transition-all duration-300 rounded-lg mx-2">QuadBiking</a>
+                            <a href="/pages/adventure-activites/gamedrive.html"
+                                class="block px-6 py-3 text-[#0c0a09] hover:bg-orange-50 hover:text-[#a05d2a] transition-all duration-300 rounded-lg mx-2">Game
+                                Drive</a>
+                            <a href="/pages/adventure-activites/transfers.html"
+                                class="block px-6 py-3 text-[#0c0a09] hover:bg-orange-50 hover:text-[#a05d2a] transition-all duration-300 rounded-lg mx-2">Transfers
+                                and Logistics</a>
+                            <a href="/pages/adventure-activites/around-zimbabwe.html"
+                                class="block px-6 py-3 text-[#0c0a09] hover:bg-orange-50 hover:text-[#a05d2a] transition-all duration-300 rounded-lg mx-2">Around
+                                Zimbabwe Packages</a>
+                            <a href="/pages/adventure-activites/helicopter-flights.html"
+                                class="block px-6 py-3 text-[#0c0a09] hover:bg-orange-50 hover:text-[#a05d2a] transition-all duration-300 rounded-lg mx-2">Helicopter
+                                Flights</a>
+                            <a href="/pages/adventure-activites/zipline.html"
+                                class="block px-6 py-3 text-[#0c0a09] hover:bg-orange-50 hover:text-[#a05d2a] transition-all duration-300 rounded-lg mx-2">Zipline</a>
+                            <a href="/pages/adventure-activites/gorge-swings.html"
+                                class="block px-6 py-3 text-[#0c0a09] hover:bg-orange-50 hover:text-[#a05d2a] transition-all duration-300 rounded-lg mx-2">Gorge
+                                Swings</a>
+                            <a href="/pages/adventure-activites/bungee.html"
+                                class="block px-6 py-3 text-[#0c0a09] hover:bg-orange-50 hover:text-[#a05d2a] transition-all duration-300 rounded-lg mx-2">Bungee</a>
+                        </div>
+                    </div>
+
+                    <!-- About Us Dropdown -->
+                    <div class="dropdown relative ">
+                        <button
+                            class="nav-link text-white hover:text-amber-600 transition-all duration-300 font-medium flex items-center py-2">
+                            About Us
+                            <svg class="w-4 h-4 ml-1 transition-transform duration-300 -hover:rotate-180"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div
+                            class="dropdown-menu absolute top-full left-0 mt-2 w-48 rounded-2xl py-3 border border-gray-100">
+                            <a href="/pages/about-us/our-story.html"
+                                class="block px-6 py-3 text-[#0c0a09] hover:bg-orange-50 hover:text-[#a05d2a] transition-all duration-300 rounded-lg mx-2">Our
+                                Story</a>
+                            <a href="/pages/about-us/our-styles.html"
+                                class="block px-6 py-3 text-[#0c0a09] hover:bg-orange-50 hover:text-[#a05d2a] transition-all duration-300 rounded-lg mx-2">Style
+                                of Travel</a>
+                            <a href="/pages/about-us/contact.html"
+                                class="block px-6 py-3 text-[#0c0a09] hover:bg-orange-50 hover:text-[#a05d2a] transition-all duration-300 rounded-lg mx-2">Contact
+                                Us</a>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Icons -->
+                    <div class="flex items-center space-x-3 border-l border-gray-300 pl-6">
+                        <a href="https://www.facebook.com/profile.php?id=61565150276991" target="_blank"
+                            class="social-icon w-9 h-9 rounded-full bg-white shadow-md flex items-center justify-center text-[#1877f2] hover:text-white hover:bg-[#1877f2]"
+                            title="Facebook">
+                            <i class="fab fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="https://twitter.com/home" target="_blank"
+                            class="social-icon w-9 h-9 rounded-full bg-white shadow-md flex items-center justify-center text-shadow-[#0c0a09] hover:text-white hover:bg-[#0c0a09]"
+                            title="x-Twitter">
+              <i class="fa-brands fa-x-twitter text-sm"></i>
+                        </a>
+                        <a href="#"
+                            class="social-icon w-9 h-9 rounded-full bg-white shadow-md flex items-center justify-center text-[#e4405f] hover:text-white hover:bg-[#e4405f]"
+                            title="Instagram">
+                            <i class="fab fa-instagram text-sm"></i>
+                        </a>
+                        <a href="#"
+                            class="social-icon w-9 h-9 rounded-full bg-white shadow-md flex items-center justify-center text-[#25d366] hover:text-white hover:bg-[#25d366]"
+                            title="WhatsApp">
+                            <i class="fab fa-whatsapp text-sm"></i>
+                        </a>
+                    </div>
+
+                    <!-- Book Now Button -->
+                    <button
+                        class="book-btn text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        Book Now
+                    </button>
+                </div>
+
+                <!-- Floating Dots Animation -->
+                <div class="floating-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-btn"
+                        class="nav-link text-[#603813] hover:text-amber-600 p-2 transition-colors duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-overlay" class="mobile-overlay fixed inset-0 bg-[#0c0a09] bg-opacity-50 z-40 lg:hidden"></div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="mobile-menu lg:hidden fixed inset-y-0 left-0 w-80 max-w-full shadow-2xl z-50 overflow-y-auto">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-8">
+                <h2
+                    class="text-2xl font-bold bg-gradient-to-r from-[#a05d2a] to-amber-600 bg-clip-text text-transparent">
+                    Menu</h2>
+                <button id="close-mobile-menu"
+                    class="text-gray-600 hover:text-[#0c0a09] p-1 transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="space-y-4">
+                <a href="#"
+                    class="block py-3 text-[#0c0a09] hover:text-[#a05d2a] font-medium transition-colors duration-300">Home</a>
+
+                <!-- Mobile Destination Experiences -->
+                <div class="border-t pt-4">
+                    <button
+                        class="mobile-dropdown-btn flex justify-between items-center w-full py-3 text-[#0c0a09] font-semibold"
+                        data-target="destinations">
+                        Destination Experiences
+                        <svg class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="destinations" class="mobile-submenu pl-4 space-y-2">
+                        <a href="#"
+                            class="block py-2 text-gray-600 hover:text-[#a05d2a] transition-colors duration-300">Victoria
+                            Falls</a>
+                        <a href="#"
+                            class="block py-2 text-gray-600 hover:text-[#a05d2a] transition-colors duration-300">Hwange</a>
+                        <a href="#"
+                            class="block py-2 text-gray-600 hover:text-[#a05d2a] transition-colors duration-300">Masvingo</a>
+                        <a href="#"
+                            class="block py-2 text-gray-600 hover:text-[#a05d2a] transition-colors duration-300">Kariba</a>
+                        <a href="#"
+                            class="block py-2 text-gray-600 hover:text-[#a05d2a] transition-colors duration-300">Nyanga</a>
+                        <a href="#"
+                            class="block py-2 text-gray-600 hover:text-[#a05d2a] transition-colors duration-300">Gweru</a>
+                        <a href="#"
+                            class="block py-2 text-gray-600 hover:text-[#a05d2a] transition-colors duration-300">Harare</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Adventure Activities -->
+                <div class="border-t pt-4">
+                    <button
+                        class="mobile-dropdown-btn flex justify-between items-center w-full py-3 text-[#0c0a09] font-semibold"
+                        data-target="activities">
+                        Adventure Activities
+                        <svg class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="activities" class="mobile-submenu pl-4 space-y-2">
+                        <a href="#"
+                            class="block py-2 text-gray-600 hover:text-[#a05d2a] transition-colors duration-300">QuadBiking</a>
+                        <a href="#"
+                            class="block py-2 text-gray-600 hover:text-[#a05d2a] transition-colors duration-300">Game
+                            Drive</a>
+                        <a href="#"
+                            class="block py-2 text-gray-600 hover:text-[#a05d2a] transition-colors duration-300">Transfers
+                            and Logistics</a>
+                        <a href="#"
+                            class="block py-2 text-gray-600 hover:text-[#a05d2a] transition-colors duration-300">Around
+                            Zimbabwe Packages</a>
+                        <a href="#"
+                            class="block py-2 text-gray-600 hover:text-[#a05d2a] transition-colors duration-300">Helicopter
+                            Flights</a>
+                        <a href="#"
+                            class="block py-2 text-gray-600 hover:text-[#a05d2a] transition-colors duration-300">Zipline</a>
+                        <a href="#"
+                            class="block py-2 text-gray-600 hover:text-[#a05d2a] transition-colors duration-300">Gorge
+                            Swings</a>
+                        <a href="#"
+                            class="block py-2 text-gray-600 hover:text-[#a05d2a] transition-colors duration-300">Bungee</a>
+                    </div>
+                </div>
+
+                <!-- Mobile About Us -->
+                <div class="border-t pt-4">
+                    <button
+                        class="mobile-dropdown-btn flex justify-between items-center w-full py-3 text-[#0c0a09] font-semibold"
+                        data-target="about">
+                        About Us
+                        <svg class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="about" class="mobile-submenu pl-4 space-y-2">
+                        <a href="#"
+                            class="block py-2 text-gray-600 hover:text-[#a05d2a] transition-colors duration-300">Our
+                            Story</a>
+                        <a href="#"
+                            class="block py-2 text-gray-600 hover:text-[#a05d2a] transition-colors duration-300">Style
+                            of Travel</a>
+                        <a href="#"
+                            class="block py-2 text-gray-600 hover:text-[#a05d2a] transition-colors duration-300">Contact
+                            Us</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Social Media -->
+                <div class="pt-6 border-t">
+                    <h3 class="text-lg font-semibold text-[#0c0a09] mb-4">Follow Us</h3>
+                    <div class="mobile-social-grid">
+                        <a href="#"
+                            class="social-icon w-12 h-12 rounded-full bg-[#1877f2] flex items-center justify-center text-white shadow-lg hover:shadow-xl"
+                            title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="social-icon w-12 h-12 rounded-full bg-[#1da1f2] flex items-center justify-center text-white shadow-lg hover:shadow-xl"
+                            title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="social-icon w-12 h-12 rounded-full bg-[#e4405f] flex items-center justify-center text-white shadow-lg hover:shadow-xl"
+                            title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="social-icon w-12 h-12 rounded-full bg-[#25d366] flex items-center justify-center text-white shadow-lg hover:shadow-xl"
+                            title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pt-6">
+                    <button
+                        class="book-btn w-full text-white font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-lg">
+                        Book Now
+                    </button>
+                </div>
+
+                <div class="pt-6 border-t">
+                    <div class="text-center space-y-2">
+                        <p class="text-gray-600">
+                            <a href="mailto:info@papioafricaadventures.com"
+                                class="text-[#a05d2a] hover:text-orange-700 transition-colors duration-300">
+                                info@papioafricaadventures.com
+                            </a>
+                        </p>
+                        <p class="text-gray-600">
+                            <a href="tel:+263773615333"
+                                class="text-[#a05d2a] hover:text-orange-700 transition-colors duration-300">
+                                +263773 615 333
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<script src="/navbar.js"></script>
+
+<body class="font-[montserrat] bg-gradient-to-br from-stone-50 to-amber-50 text-stone-900">
+
+     <!-- Hero Section -->
+    <section class="relative md:min-h-screen min-h-[60%] flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-amber-900 to-orange-900 ">
+        <!-- Animated Background -->
+        <div class="absolute inset-0 opacity-60">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/10 to-black/10 animate-pulse"></div>
+<img src="/assets/images/contacthero.png" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply" alt="OurStyle Hero Image">
+
+        </div>
+        
+        <!-- Dynamic Floating Elements -->
+        <div class="absolute top-20 left-16 w-32 h-32 bg-gradient-to-br from-amber-700 to-orange-500 rounded-3xl animate-bounce opacity-30"></div>
+        <div class="absolute top-40 right-20 w-24 h-24 bg-gradient-to-bl from-yellow-400 to-amber-500 rounded-full animate-pulse opacity-40"></div>
+        <div class="absolute bottom-32 left-24 w-20 h-20 bg-gradient-to-tr from-orange-400 to-red-500 animate-bounce opacity-25 rounded-full"></div>
+ 
+        <!-- Main Content -->
+        <div class="relative z-10 text-center px-6 max-w-6xl mx-auto mt-45">
+ 
+            <!-- Main Heading -->
+            <h1 class="text-5xl md:text-9xl font-black mb-6">
+                <span class="block text-white">Contact</span>
+                <span class="block bg-gradient-to-r from-amber-700 via-yellow-400 to-orange-500 bg-clip-text text-transparent">Papio Africa</span>
+     
+            </h1>
+            
+
+            
+
+        </div>
+
+    </section>
+<section class="min-h-screen py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-16 opacity-0 animate-fade-in-up" style="animation-delay: 0.2s;">
+                <h1 class="text-5xl md:text-6xl font-bold text-stone-800 mb-6 tracking-tight">
+                    Get In <span class="text-amber-600">Touch</span>
+                </h1>
+                <p class="text-xl text-stone-700 max-w-2xl mx-auto leading-relaxed">
+                  If you're ready to embark on your next African adventure? We're here to help you create unforgettable memories in Victoria Falls.
+                </p>
+            </div>
+
+            <!-- Contact Cards Grid -->
+            <div class="grid md:grid-cols-3 gap-6 mb-16">
+                <!-- WhatsApp Card -->
+                <div class=" bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transform hover:scale-100 transition-all duration-500 border border-amber-100 opacity-1 animate-fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-amber-600 to-amber-700 rounded-2xl mx-auto mb-6 flex items-center justify-center -hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.531 3.542"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-stone-800 mb-4">WhatsApp</h3>
+                        <p class="text-stone-600 mb-6">Quick responses for instant bookings</p>
+                        <a href="https://wa.me/263773615333" class="inline-flex items-center justify-center bg-gradient-to-r from-amber-600 to-amber-700 text-white px-6 py-3 rounded-xl font-semibold hover:from-amber-700 hover:to-amber-800 transition-all duration-300 hover:scale-105 shadow-lg">
+                            +263773 615 333
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Email Card -->
+                <div class=" bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 border border-amber-100 opacity-0 animate-fade-in-up" style="animation-delay: 0.6s;">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-amber-600 to-amber-700 rounded-2xl mx-auto mb-6 flex items-center justify-center -hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-stone-800 mb-4">General Inquiries</h3>
+                        <p class="text-stone-600 mb-6">For questions and information</p>
+                        <a href="mailto:info@papioafricaadventures.com" class="inline-block bg-gradient-to-r from-amber-600 to-amber-700 text-white px-6 py-3 rounded-xl font-semibold hover:from-amber-700 hover:to-amber-800 transition-all duration-300 hover:scale-105 shadow-lg">
+                            info@papioafricaadventures.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bookings Card -->
+                <div class=" bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 border border-amber-100 opacity-1 animate-fade-in-up" style="animation-delay: 0.8s;">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-amber-600 to-amber-700 rounded-2xl mx-auto mb-6 flex items-center justify-center -hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-stone-800 mb-4">Bookings</h3>
+                        <p class="text-stone-600 mb-6">Reserve your adventure today</p>
+                        <a href="mailto:bookings@papioafricaadventures.com" class="inline-block bg-gradient-to-r from-amber-600 to-amber-700 text-white px-6 py-3 rounded-xl font-semibold hover:from-amber-700 hover:to-amber-800 transition-all duration-300 hover:scale-105 shadow-lg">
+                            bookings@papioafricaadventures.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location & Hours Info -->
+            <div class="grid md:grid-cols-2 gap-8 opacity-0 animate-fade-in-up" style="animation-delay: 1s;">
+                <!-- Location -->
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-amber-100 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-amber-600 to-amber-700 rounded-xl flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-stone-800">Location</h3>
+                    </div>
+                    <p class="text-stone-700 text-lg leading-relaxed">
+                        Based in the heart of Victoria Falls, Zimbabwe - gateway to one of the world's most spectacular natural wonders. We're perfectly positioned to offer you the ultimate African adventure experience.
+                    </p>
+                </div>
+
+                <!-- Experience -->
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-amber-100 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-amber-600 to-amber-700 rounded-xl flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-stone-800">Why Choose Us?</h3>
+                    </div>
+                    <p class="text-stone-700 text-lg leading-relaxed">
+                        Local expertise, personalized service, and unforgettable adventures. We're passionate about showcasing the beauty and thrill of Victoria Falls and the surrounding region.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center mt-16 opacity-0 animate-fade-in-up" style="animation-delay: 1.2s;">
+                <div class="bg-gradient-to-r from-amber-600 to-amber-700 rounded-3xl p-12 text-white shadow-2xl">
+                    <h2 class="text-4xl font-bold mb-6">Ready for Your Adventure?</h2>
+                    <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                        Don't wait - the adventure of a lifetime is just a message away. Contact us today and let's start planning your Victoria Falls experience.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="https://wa.me/263773615333" class="inline-flex items-center justify-center bg-white text-amber-700 px-8 py-4 rounded-xl font-bold hover:bg-amber-50 transition-all duration-300 hover:scale-105 shadow-lg">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.531 3.542"/>
+                            </svg>
+                            WhatsApp Us
+                        </a>
+                        <a href="mailto:bookings@papioaficaadventures.com" class="inline-flex items-center justify-center bg-stone-800text-stone-800 text-white px-8 py-4 rounded-xl font-bold hover:bg-stone-800 transition-all duration-300 hover:scale-105 shadow-lg">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+        <!-- Footer -->
+    <footer class="bg-[#0c0a09] text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12 mt-12">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <h3 class="text-3xl font-adventure text-amber-600 mb-4">Papio Adventures</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Your premier tourism partner in Zimbabwe, offering unforgettable experiences 
+                        from amusement parks to exclusive wilderness adventures. With over 10 years 
+                        of expertise, we deliver seamless, complete solutions for every traveler.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-amber-600 hover:bg-amber-700 p-3 rounded-full transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-amber-600 hover:bg-amber-700 p-3 rounded-full transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-amber-600 hover:bg-amber-700 p-3 rounded-full transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-amber-600 hover:bg-amber-700 p-3 rounded-full transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-6 text-amber-600">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="/pages/about-us/our-story.html" class="text-gray-300 hover:text-amber-600 transition-colors flex items-center">
+                            <i class="fas fa-chevron-right mr-2 text-amber-600"></i>About Us</a></li>
+                        <li><a href="/pages/destinations.html" class="text-gray-300 hover:text-amber-600 transition-colors flex items-center">
+                            <i class="fas fa-chevron-right mr-2 text-amber-600"></i>Destinations</a></li>
+                        <li><a href="/pages/tours-packages.html" class="text-gray-300 hover:text-amber-600 transition-colors flex items-center">
+                            <i class="fas fa-chevron-right mr-2 text-amber-600"></i>Tours & Packages</a></li>
+                        <li><a href="/pages/our-styles.html" class="text-gray-300 hover:text-amber-600 transition-colors flex items-center">
+                            <i class="fas fa-chevron-right mr-2 text-amber-600"></i>Style of Travel</a></li>
+                        <li><a href="/pages/contact.html" class="text-gray-300 hover:text-amber-600 transition-colors flex items-center">
+                            <i class="fas fa-chevron-right mr-2 text-amber-600"></i>Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-6 text-amber-600">Contact Info</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-amber-600 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Victoria Falls, Zimbabwe</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-amber-600 mr-3"></i>
+                            <span class="text-gray-300">+263773 615 333
+
+</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-amber-600 mr-3"></i>
+                            <span class="text-gray-300">info@papioafricaadventures.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-amber-600 mr-3"></i>
+                            <span class="text-gray-300">24/7 Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2025 Papio Adventures. All rights reserved. | 
+                    <span class="text-amber-600">Creating memories that last a lifetime.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    </html>
